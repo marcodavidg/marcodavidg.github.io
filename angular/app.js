@@ -25,7 +25,8 @@ class Project {
     }
 }
 
-app.controller("appController", ($scope) => {
+
+app.controller("appController", ($scope, $interval) => {
     $scope.fullName = "Marco Galindo";
     $scope.email = "marcodavidg@gmail.com";
     $scope.title = "Software Developer"
@@ -70,6 +71,28 @@ app.controller("appController", ($scope) => {
         new Project("Portfolio site","Angular, Javascript", "03-2024", "portfolioPic.png", ""),
     ];
 
+});
+
+
+
+app.controller("countController", ($scope, $interval) => {
+    var endTime = new Date('2024-04-22T07:00:00+02:00').getTime();
+
+    function updateCountdown() {
+        var now = new Date().getTime();
+        var timeRemaining = endTime - now;
+
+        $scope.days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        $scope.hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        $scope.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        $scope.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    }
+
+    // Update the countdown every second
+    $interval(updateCountdown, 1000);
+
+    // Initial call to update countdown
+    updateCountdown();
 });
 
 
