@@ -68,6 +68,7 @@ app.controller("appController", ($scope, $interval) => {
         new Project("ODK Ad-hoc Report Generator Tool","Java web, MySQL", "11-2022", "odktool.png", "https://www.youtube.com/watch?v=mJZH9FkutTg"),
         new Project("Data mining and ML models with Apache Spark","Apache Spark, Azure", "03-2024", "sagemaker.png", "https://github.com/marcodavidg/Sagemaker-SS-Demo"),
         new Project("AWS Sagemaker demo","Semantic segmentation, AWS", "03-2024", "spark.png", "https://github.com/marcodavidg/Spark-MLlib-Model"),
+        new Project("MERN Stack Udemy Tutorial","MERN Stack", "06-2024", "MERN.png", "https://github.com/marcodavidg/MERN_Tutorial"),
         new Project("Portfolio site","Angular, Javascript", "03-2024", "portfolioPic.png", ""),
     ];
 
