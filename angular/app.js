@@ -29,10 +29,9 @@ class Project {
 app.controller("appController", ($scope, $interval) => {
     $scope.fullName = "Marco Galindo";
     $scope.email = "marcodavidg@gmail.com";
-    $scope.title = "Software Developer"
-    $scope.phone = "+(886) 0974 078 472"
-    $scope.address = "Jinshan 28th St. No. 8, East District, Hsinchu City, Taiwan"
-    $scope.addressCH = " 300台灣新竹市東區金山二十八街八號"
+    $scope.title = "Software Engineer & AI Specialist"
+    $scope.phone = "+(502) 31586319"
+    $scope.address = "Guatemala City, Guatemala"
 
     $scope.languages = [
         new Language("English",100),
