@@ -68,6 +68,7 @@ app.controller("appController", ($scope, $interval) => {
         new Project("Data mining and ML models with Apache Spark","Apache Spark, Azure", "03-2024", "sagemaker.png", "https://github.com/marcodavidg/Sagemaker-SS-Demo"),
         new Project("AWS Sagemaker demo","Semantic segmentation, AWS", "03-2024", "spark.png", "https://github.com/marcodavidg/Spark-MLlib-Model"),
         new Project("MERN Stack Udemy Tutorial","MERN Stack", "06-2024", "MERN.jpg", "https://github.com/marcodavidg/MERN_Tutorial"),
+        new Project("Task Tracker Dashboard","MERN Stack, PrimeReact", "07-2024", "TaskTracker.png", "https://github.com/marcodavidg/TaskTracker-Dashboard"),
     ];
 
 });
